@@ -1,0 +1,114 @@
+/* ------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.wrapper {
+    width: 300vw;
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    touch-action: cross-slide-x;
+}
+
+html,
+body,
+.wrapper,
+.container {
+    scroll-behavior: smooth;
+}
+
+.container {
+    color: white;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    border: 1vh double white;
+}
+
+/* Slider NavBar */
+
+.slidenav {
+    display: flex;
+    column-gap: 1rem;
+    position: fixed;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.3);
+    height: 1.5rem;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 50px;
+}
+
+.slidenav a {
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    border: 3px solid white;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.slidenav a:hover {
+    background-color: white;
+}
+
+/* Home Container */
+
+.home-area {
+    background-color: #191919;
+}
+
+/* Project Container */
+
+.project-area {
+    background-color: #222222;
+}
+
+/* About Container */
+
+.about-area {
+    background-color: #191919;
+    display: flex;
+}
+
+/* Contact Container */
+
+.contact-area {
+    background-color: #191919;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width:900px) {
+    .contact-area {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width:1010px) {
+    .project-area {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

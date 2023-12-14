@@ -1,0 +1,101 @@
+@import url("style.css");
+
+.contact-form {
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(3px);
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 30vw;
+    height: 60vh;
+    border-radius: 50px;
+    z-index: 2;
+    position: relative;
+    right: 5.7%;
+}
+
+.owl {
+    height: 90vh;
+    position: absolute;
+}
+
+.ibrahim {
+    display: inline;
+    position: relative;
+    font-size: 0.8rem;
+    top: -30%;
+    right: 25%;
+    font-family: 'Pacifico', cursive;
+}
+
+.ibrahim h1:hover {
+    text-shadow: 20px 20px 20px white;
+    transition: 2s;
+}
+
+.contact-form h1 {
+    color: white;
+    font-weight: 800;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    text-shadow: -2px -2px #FFD369;
+}
+
+.contact-form input,
+.contact-form textarea {
+    border: 0;
+    border-radius: 10px;
+    resize: none;
+    margin: 10px 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+    font-size: 1rem;
+    opacity: 0.5;
+}
+
+.contact-form button {
+    padding: 15px;
+    background: #FFD369;
+    margin-top: 2vh;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    font-family: 'Pacifico', cursive;
+}
+
+.contact-form input:hover,
+.contact-form textarea:hover,
+.contact-form button:hover {
+    transform: scale(1.05);
+    transition: 1.5s;
+}
+
+/* RESPONSİVE TASARIM */
+
+@media only screen and (max-width:1100px) {
+    .ibrahim {
+        right: 20%;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .owl {
+        height: 70vh;
+    }
+
+    .ibrahim {
+        top: -10%;
+        right: 0%;
+    }
+
+    .contact-form {
+        width: 60vw;
+        height: 60vh;
+        right: 0;
+    }
+}
